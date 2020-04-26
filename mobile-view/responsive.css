@@ -1,7 +1,0 @@
-/*tablet*/
-
-@media(max-width:900px) {
-    header {
-        position: fixed;
-    }
-}
