@@ -1,65 +1,143 @@
-/*tablet*/
-
-@media(max-width: 768px) {
-    header {
-        position: fixed;
-    }
-    #main-content {
-        width: 100%;
-        height: 400px;
-        background-size: cover;
-    }
-    .contents h1 {
-        font-size: 32px;
-        margin-top: -30px;
-    }
-    .contents h2 {
-        font-size: 23px;
-        margin-top: -2px;
-    }
-    .contents p {
-        font-size: 16px;
-        letter-spacing: 2px;
-    }
-    .btn-wrapper {
-        margin-top: -40px;
-    }
-    .btn-wrapper .signup {
-        margin-top: 10px;
-        margin-bottom: -20px;
-    }
-    .btn-wrapper p {
-        font-weight: 600;
-    }
-    #extra1 {
-        width: 100%;
-    }
-    .card-mentor {
-        width: 250px;
-    }
-    .header-mentor {
-        background-size: cover;
-        background-position: -25px 0;
-    }
-    .content-mentor h2 {
-        font-size: 18px;
-    }
-    input,
-    textarea {
-        width: 500px;
-        height: 10px;
-        margin-top: -10px;
-    }
-    .contact-submit {
-        width: 150px;
-        padding-bottom: 20px;
-        line-height: 5px;
-    }
-}
-
-@media (min-width: 600px) {
-    .container-mentor {
-        display: flex;
-        justify-content: center;
-    }
-}
+                                /*tablet*/
+                                
+                                @media(max-width: 1000px) {
+                                    header {
+                                        position: fixed;
+                                    }
+                                    .head-right {
+                                        display: none;
+                                    }
+                                    .head-right {
+                                        display: none;
+                                    }
+                                    .head-left {
+                                        height: auto;
+                                        border-bottom: 0;
+                                        float: right;
+                                    }
+                                    #menu-icon {
+                                        padding: 18px 0 0 0;
+                                        text-align: right;
+                                        height: 70px;
+                                        width: 50px;
+                                        display: block;
+                                        width: 100%;
+                                        position: relative;
+                                        color: #398be9;
+                                    }
+                                    .head-left span {
+                                        padding: 18px 0 0 0;
+                                        text-align: center;
+                                        height: 70px;
+                                        width: 50px;
+                                    }
+                                    .head-left ul {
+                                        width: 100%;
+                                        height: auto;
+                                        display: none;
+                                    }
+                                    .head-left li {
+                                        width: 100%;
+                                        float: none;
+                                        display: block;
+                                        background: #0022bbbe;
+                                    }
+                                    .head-left li a {
+                                        color: #ffffff;
+                                    }
+                                    .head-left a {
+                                        text-align: left;
+                                        width: 100%;
+                                        text-indent: 25px;
+                                        color: #333333;
+                                    }
+                                    .head-left li a:after {
+                                        content: "";
+                                        width: 30px;
+                                        height: 30px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 10px;
+                                    }
+                                    .menu-item li a::after {
+                                        transform: scaleX(0);
+                                    }
+                                    .menu-item li a:hover::after {
+                                        transform: scaleX(0);
+                                    }
+                                    .contents {
+                                        width: auto;
+                                    }
+                                    .contents h1 {
+                                        font-size: 36px;
+                                    }
+                                }
+                                
+                                @media screen and (max-width: 600px) {
+                                    .head-right {
+                                        display: none;
+                                    }
+                                    .head-left {
+                                        height: auto;
+                                        border-bottom: 0;
+                                        float: right;
+                                    }
+                                    #menu-icon {
+                                        padding: 18px 0 0 0;
+                                        text-align: right;
+                                        height: 70px;
+                                        width: 50px;
+                                        display: block;
+                                        width: 100%;
+                                        position: relative;
+                                        color: #398be9;
+                                    }
+                                    .head-left span {
+                                        padding: 18px 0 0 0;
+                                        text-align: center;
+                                        height: 70px;
+                                        width: 50px;
+                                    }
+                                    .head-left ul {
+                                        width: 100%;
+                                        height: auto;
+                                        display: none;
+                                    }
+                                    .head-left li {
+                                        width: 100%;
+                                        float: none;
+                                        display: block;
+                                        background: #0022bbbe;
+                                    }
+                                    .head-left li a {
+                                        color: #ffffff;
+                                    }
+                                    .head-left a {
+                                        text-align: left;
+                                        width: 100%;
+                                        text-indent: 25px;
+                                        color: #333333;
+                                    }
+                                    .head-left li a:after {
+                                        content: "";
+                                        width: 30px;
+                                        height: 30px;
+                                        display: inline-block;
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 10px;
+                                    }
+                                    #extra1 {
+                                        height: 800px;
+                                    }
+                                    #extra2 {
+                                        height: 950px;
+                                    }
+                                    .community {
+                                        width: auto;
+                                    }
+                                    .about {
+                                        margin-left: 10px;
+                                    }
+                                }

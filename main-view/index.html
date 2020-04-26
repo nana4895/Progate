@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./responsive.css">
@@ -15,6 +16,7 @@
         <div class="head-logo">
             <img src="../img/melody.png">
         </div>
+        <div class="fa fa-bars fa-2x" id="menu-icon"></div>
         <div class="head-left">
             <ul class="menu-item" id="navigation">
                 <li><a href="#">home</a></li>
@@ -24,6 +26,7 @@
                 <!--<a href="javascript:void(0);" class="icon" onclick="Nav()"><i class="fa fa-bars" style="color: #fff;"></i></a>-->
             </ul>
         </div>
+
         <div class="head-right">
             <a href="#" class="btn link">Log In</a>
         </div>
@@ -32,7 +35,7 @@
     <div id="main-content">
         <div class="contents">
             <h1>CARA SERU BELAJAR MUSIK</h1>
-            <h2>MENGGUNAKAN SISTEM PENGAJARAN YANG MENYENANGKAN DAN VARIATIF</h2>
+            <h2>DENGAN PENGAJARAN YANG MENYENANGKAN </br>DAN VARIATIF</h2>
             <p>DTS Musik membantu para siswa untuk mengekspresikan diri lewat musik</p>
             <p>Ayo Tingkatkan Potensi Anda dengan Mengikuti Kursus di DTS Musik.</p>
         </div>
@@ -47,47 +50,50 @@
 
     <!-- duan -->
     <div id="extra1">
-        <h2>Belajar dari Mentor yang Handal</h2>
+        <div class="container">
+            <div class="heading">
+                <h2>Belajar dari Mentor yang Handal</h2>
+            </div>
 
-        <div class="container-mentor">
-            <div class="card-mentor">
-                <div class="header-mentor"></div>
-                <div class="content-mentor">
-                    <h2>Cindi Astrid Irdam</h2>
+            <div class="container-mentor">
+                <div class="card-mentor">
+                    <div class="content-mentor">
+                        <img src="../img/people.png">
+                    </div>
+                    <h3>Cindi Astrid Irdam</h3>
                     <p>Mentor Drum</p>
                 </div>
-            </div>
 
-            <div class="card-mentor">
-                <div class="header-mentor"></div>
-                <div class="content-mentor">
-                    <h2>Dicky Firmansyah</h2>
+                <div class="card-mentor">
+                    <div class="content-mentor">
+                        <img src="../img/people.png">
+                    </div>
+                    <h3>Dicky Firmansyah</h3>
                     <p>Mentor Piano</p>
                 </div>
-            </div>
 
-            <div class="card-mentor">
-                <div class="header-mentor"></div>
-                <div class="content-mentor">
-                    <h2>Dinda NY</h2>
+                <div class="card-mentor">
+                    <div class="content-mentor">
+                        <img src="../img/people.png">
+                    </div>
+                    <h3>Dinda NY</h3>
                     <p>Mentor Vocal</p>
                 </div>
-            </div>
-
-            <div class="card-mentor">
-                <div class="header-mentor"></div>
-                <div class="content-mentor">
-                    <h2>Duan Wahyudi</h2>
+                <div class="card-mentor">
+                    <div class="content-mentor">
+                        <img src="../img/people.png">
+                    </div>
+                    <h3>Duan Wahyudi</h3>
                     <p>Mentor Bass</p>
                 </div>
-            </div>
-
-            <div class="card-mentor">
-                <div class="header-mentor"></div>
-                <div class="content-mentor">
-                    <h2>Dwi Firmansyah</h2>
-                    <p>Mentor Gitar</p>
+                <div class="card-mentor">
+                    <div class="content-mentor">
+                        <img src="../img/people.png">
+                    </div>
+                    <h3>Dwi Firmansyah</h3>
+                    <p>Mentor Guitar</p>
                 </div>
+                <div class="clear"></div>
             </div>
         </div>
     </div>
@@ -207,7 +213,12 @@
     <footer>
         <p id="copy">DTS Music School​​ Terms ​​and Condition.© DTS Music All rights reserved.</p>
     </footer>
-
+    <script>
+        // Global Circulation
+        $("#menu-icon").click(function() {
+            $("#navigation").slideToggle();
+        });
+    </script>
     <!--
     <script>
         function Nav() {
@@ -224,7 +235,25 @@
 $("#sub_nav").click(function () {
     $(".sub_nav").slideToggle("slow");
 });
--->
+
+    <script>
+        $(function() {
+            var pull = $('.menu-item');
+            menu = $('.head-left ul');
+
+            $(pull).click(function(icon) {
+                icon.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function() {
+                var w = $(window).width();
+                if (w > 600 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    -->
 </body>
 
 </html>
